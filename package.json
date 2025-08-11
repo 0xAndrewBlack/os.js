@@ -1,0 +1,20 @@
+// 20250811175059
+// https://repo.doctorbirch.com/jos/files/package.json
+{
+  "name": "jos",
+  "version": "0.0.0",
+  "description": "",
+  "type": "module",
+  "main": "main.js",
+  "scripts": {
+    "start": "node ."
+  },
+  "keywords": [
+    "javascript",
+    "operating system",
+    "jos",
+    "osdev"
+  ],
+  "author": "@dr-Jonas-Birch",
+  "license": "UNLICENSED"
+}
