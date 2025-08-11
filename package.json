@@ -1,20 +1,15 @@
-// 20250811175059
-// https://repo.doctorbirch.com/jos/files/package.json
 {
-  "name": "jos",
-  "version": "0.0.0",
-  "description": "",
+  "name": "os.js",
+  "version": "1.0.0",
+  "description": "Bare-bones operating system written in JavaScript",
+  "main": "src/os.js",
   "type": "module",
-  "main": "main.js",
   "scripts": {
-    "start": "node ."
+    "start": "qemu-system-i386 -nographic -hda ./build/os.bin -m 512",
+    "build": "node ./src/os.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [
-    "javascript",
-    "operating system",
-    "jos",
-    "osdev"
-  ],
-  "author": "@dr-Jonas-Birch",
-  "license": "UNLICENSED"
+  "author": "0xAndrewBlack & @dr-Jonas-Birch",
+  "license": "MIT",
+  "keywords": []
 }
