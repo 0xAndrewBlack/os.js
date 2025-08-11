@@ -2,14 +2,22 @@
   "name": "os.js",
   "version": "1.0.0",
   "description": "Bare-bones operating system written in JavaScript",
-  "main": "src/os.js",
+  "main": "src/os.ts",
   "type": "module",
   "scripts": {
     "start": "qemu-system-i386 -nographic -hda ./build/os.bin -m 512",
-    "build": "node ./src/os.js",
+    "dev": "tsx watch ./src/os.ts",
+    "build": "tsx ./src/os.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "0xAndrewBlack & @dr-Jonas-Birch",
   "license": "MIT",
-  "keywords": []
+  "keywords": [],
+  "devDependencies": {
+    "@types/node": "^24.2.1",
+    "tsc": "^2.0.4",
+    "tsup": "^8.5.0",
+    "tsx": "^4.20.3",
+    "typescript": "^5.9.2"
+  }
 }
